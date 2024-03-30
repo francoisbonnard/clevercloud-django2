@@ -5,3 +5,5 @@ git branch -M master
 git push -u clever master
 ```
 
+
+CC_PYTHON_MODULE photoshare.wsgi:application

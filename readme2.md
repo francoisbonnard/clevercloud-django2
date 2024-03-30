@@ -7,3 +7,9 @@ git push -u clever master
 
 
 CC_PYTHON_MODULE photoshare.wsgi:application
+
+``` bash
+git remote add origin https://github.com/francoisbonnard/clevercloud2.git
+# git push -u origin main
+git push -u origin master
+```

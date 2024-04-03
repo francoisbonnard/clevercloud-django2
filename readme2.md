@@ -10,7 +10,7 @@ CC_PYTHON_MODULE photoshare.wsgi:application
 
 ``` bash
 git branch -M main
-git remote add origin https://github.com/francoisbonnard/clevercloud-django2.git
-git push -u origin main
+git remote add origin2 https://github.com/francoisbonnard/clevercloud-django2.git
+git push -u origin2 main
 ```
 

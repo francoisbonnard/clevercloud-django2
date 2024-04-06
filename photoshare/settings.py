@@ -25,6 +25,8 @@ SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG',cast=bool)
+print("____________debug")
+print(DEBUG)
 
 ALLOWED_HOSTS = ['10.2.190.195','10.2.140.21','127.0.0.1','pelimelo.cleverapps.io']
 

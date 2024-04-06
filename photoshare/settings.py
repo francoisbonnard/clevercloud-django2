@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,10 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-w=pxc#6#4d*1cx1ffeumqeuc%agvy5#4c_h$ou-9vwj=!qry@&'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG',cast=bool)
 
 ALLOWED_HOSTS = ['10.2.190.195','10.2.140.21','127.0.0.1','pelimelo.cleverapps.io']
 
@@ -122,3 +123,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# MYSQL_ADDON_HOST=bht2f0la4j8cz8fiwfdm-mysql.services.clever-cloud.com
+# MYSQL_ADDON_DB=bht2f0la4j8cz8fiwfdm
+# MYSQL_ADDON_USER=uczgzdxr8ml1xeex
+# MYSQL_ADDON_PORT=3306
+# MYSQL_ADDON_PASSWORD=Ka97UZgcCBl56BzmiZyu
+# MYSQL_ADDON_URI=mysql://uczgzdxr8ml1xeex:Ka97UZgcCBl56BzmiZyu@bht2f0la4j8cz8fiwfdm-mysql.services.clever-cloud.com:3306/bht2f0la4j8cz8fiwfdm

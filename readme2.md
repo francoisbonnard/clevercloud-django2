@@ -14,3 +14,4 @@ git remote add origin2 https://github.com/francoisbonnard/clevercloud-django2.gi
 git push -u origin2 main
 ```
 
+[python decouple](https://pypi.org/project/python-decouple/)

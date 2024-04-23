@@ -31,3 +31,18 @@ createsuperuser
 ```bash
 ssh -t ssh@sshgateway-clevercloud-customers.services.clever-cloud.com app_a3a23a35-ac68-4ee0-b8a5-24def9d
 ```
+ssh -t ssh@sshgateway-clevercloud-customers.services.clever-cloud.com app_a3a23a35-ac68-4ee0-b8a5-24def9d14b99
+
+[Reddit](https://www.reddit.com/r/django/comments/1c329xo/how_to_create_a_superuser_on_paas_without_using/)
+
+database
+
+```bash
+mysql -h bht2f0la4j8cz8fiwfdm-mysql.services.clever-cloud.com -u uczgzdxr8ml1xeex -P3306 -p bht2f0la4j8cz8fiwfdm
+
+USE bht2f0la4j8cz8fiwfdm
+
+SELECT * FROM auth_user;
+
+```
+

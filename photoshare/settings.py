@@ -76,14 +76,21 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'MYSQL_ADDON_HOST':config('MYSQL_ADDON_HOST'),
-            'MYSQL_ADDON_DB':config('MYSQL_ADDON_DB'),
-            'MYSQL_ADDON_USER':config('MYSQL_ADDON_USER'),
-            'MYSQL_ADDON_PORT':config('MYSQL_ADDON_PORT',cast=int),
-            'MYSQL_ADDON_PASSWORD':config('MYSQL_ADDON_PASSWORD'),
-            'MYSQL_ADDON_URI':config('MYSQL_ADDON_URI')
+            # 'MYSQL_ADDON_HOST':config('MYSQL_ADDON_HOST'),
+            # 'MYSQL_ADDON_DB':config('MYSQL_ADDON_DB'),
+            # 'MYSQL_ADDON_USER':config('MYSQL_ADDON_USER'),
+            # 'MYSQL_ADDON_PORT':config('MYSQL_ADDON_PORT',cast=int),
+            # 'MYSQL_ADDON_PASSWORD':config('MYSQL_ADDON_PASSWORD'),
+            # 'MYSQL_ADDON_URI':config('MYSQL_ADDON_URI')
+            'NAME': config('MYSQL_ADDON_DB'),
+            'USER': config('MYSQL_ADDON_USER'),
+            'PASSWORD': config('MYSQL_ADDON_PASSWORD'),
+            'HOST': config('MYSQL_ADDON_HOST'),
+            'PORT': config('MYSQL_ADDON_PORT',cast=int),
     }
 }
+
+
 
 print("user db")
 print(config('MYSQL_ADDON_USER'))

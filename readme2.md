@@ -46,3 +46,4 @@ SELECT * FROM auth_user;
 
 ```
 
+migrate

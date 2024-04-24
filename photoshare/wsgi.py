@@ -23,5 +23,5 @@ def create_super_user():
     if not User.objects.filter(username='fransua').exists():
         User.objects.create_superuser('fransua', 'geosesame@gmail.com', config('PASSWORD_SUPERUSER'))
 
-create_super_user()
+# create_super_user()
 

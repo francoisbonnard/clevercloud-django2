@@ -46,4 +46,4 @@ SELECT * FROM auth_user;
 
 ```
 
-migrate
+![superuser after ssh](image.png)

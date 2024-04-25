@@ -47,3 +47,8 @@ SELECT * FROM auth_user;
 ```
 
 ![superuser after ssh](image.png)
+
+[doc static files](https://docs.djangoproject.com/en/5.0/howto/static-files/)
+[doc static files](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
+
+![chrome console failed to load resources](image-1.png)

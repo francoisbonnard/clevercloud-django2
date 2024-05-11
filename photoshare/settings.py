@@ -131,8 +131,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = BASE_DIR / 'static'
-print("base_dir")
+STATIC_ROOT = BASE_DIR / 'photoshare/static'
+print("base_dir2")
 print(STATIC_ROOT)
 
 # Default primary key field type

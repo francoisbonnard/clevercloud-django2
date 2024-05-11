@@ -52,3 +52,5 @@ SELECT * FROM auth_user;
 [doc static files](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
 
 ![chrome console failed to load resources](image-1.png)
+
+[What's the difference between STATIC_URL and STATIC_ROOT in Django?](https://stackoverflow.com/questions/37716200/whats-the-difference-between-static-url-and-static-root-in-django)

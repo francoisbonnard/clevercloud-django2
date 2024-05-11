@@ -131,9 +131,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = BASE_DIR / 'photoshare/static'
-print("base_dir2")
+# STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = "/home/bas/app_a3a23a35-ac68-4ee0-b8a5-24def9d14b99/photoshare/static"
+print("base_dir3")
 print(STATIC_ROOT)
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

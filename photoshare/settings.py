@@ -132,8 +132,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # STATIC_ROOT = BASE_DIR / 'static'
-STATIC_ROOT = "/home/bas/app_a3a23a35-ac68-4ee0-b8a5-24def9d14b99/photoshare/static"
-print("base_dir3")
+STATIC_ROOT = "/home/bas/app_a3a23a35-ac68-4ee0-b8a5-24def9d14b99/static"
+print("base_dir4")
 print(STATIC_ROOT)
 
 

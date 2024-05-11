@@ -5,6 +5,7 @@ from decouple import config
 import pymysql
 pymysql.install_as_MySQLdb()
 
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -131,10 +132,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATIC_ROOT = BASE_DIR / 'static'
-STATIC_ROOT = "/home/bas/app_a3a23a35-ac68-4ee0-b8a5-24def9d14b99/static"
-print("base_dir4")
+STATIC_ROOT = BASE_DIR / 'static'
+# STATIC_ROOT = "/home/bas/app_a3a23a35-ac68-4ee0-b8a5-24def9d14b99/static"
+print("base_dir5")
 print(STATIC_ROOT)
+
+file_path = "/home/bas/app_a3a23a35-ac68-4ee0-b8a5-24def9d14b99/static/admin/css/base.css"
+if os.path.exists(file_path):
+    print("Le fichier existe.")
+else:
+    print("Le fichier n'existe")
 
 
 # Default primary key field type

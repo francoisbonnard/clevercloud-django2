@@ -56,3 +56,7 @@ SELECT * FROM auth_user;
 [What's the difference between STATIC_URL and STATIC_ROOT in Django?](https://stackoverflow.com/questions/37716200/whats-the-difference-between-static-url-and-static-root-in-django)
 
 [Check this Taiga](https://www.clever-cloud.com/blog/features/2017/10/10/1fdba-django-taiga/)
+
+[Deployment](https://docs.djangoproject.com/en/4.2/howto/deployment/)
+
+[statix files in production](https://docs.djangoproject.com/en/4.2/howto/static-files/deployment/)

@@ -46,16 +46,39 @@ SELECT * FROM auth_user;
 
 ```
 
-![superuser after ssh](image.png)
+[superuser after ssh](image.png)
 
-[doc static files](https://docs.djangoproject.com/en/5.0/howto/static-files/)
-[doc static files](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
+# Fucking Static
 
-![chrome console failed to load resources](image-1.png)
+[How to manage static files](https://docs.djangoproject.com/en/5.0/howto/static-files/)
+[How to deploy static files](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
+[clever cloud ! Manage your static files ](https://developers.clever-cloud.com/doc/applications/python/#manage-your-static-files)
+
+
+
+    STATIC_FILES_PATH="static/"
+    STATIC_URL_PREFIX="/static"
+
+STATICFILES_DIRS = STATIC_FILES_PATH (Clevercloud)
+STATIC_URL = STATIC_URL_PREFIX (Clevercloud)
+
+    STATICFILES_DIRS = [
+        BASE_DIR / "static",
+        "/var/www/static/",
+]
+
+My Settings.py
+
+    STATIC_URL = '/static/'
+
+    # Add these new lines
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static'),
+    )
+
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 [What's the difference between STATIC_URL and STATIC_ROOT in Django?](https://stackoverflow.com/questions/37716200/whats-the-difference-between-static-url-and-static-root-in-django)
-
-[Check this Taiga](https://www.clever-cloud.com/blog/features/2017/10/10/1fdba-django-taiga/)
 
 [Deployment](https://docs.djangoproject.com/en/4.2/howto/deployment/)
 

@@ -26,7 +26,9 @@ CC_PYTHON_MANAGE_TASKS="migrate, assets:precompile"
 CC_PYTHON_MANAGE_TASKS="makemigrations, migrate, createsuperuser"
 ```
 
-createsuperuser
+# createsuperuser
+
+fransua 6T&
 
 ```bash
 ssh -t ssh@sshgateway-clevercloud-customers.services.clever-cloud.com app_a3a23a35-ac68-4ee0-b8a5-24def9d
@@ -35,7 +37,7 @@ ssh -t ssh@sshgateway-clevercloud-customers.services.clever-cloud.com app_a3a23a
 
 [Reddit](https://www.reddit.com/r/django/comments/1c329xo/how_to_create_a_superuser_on_paas_without_using/)
 
-database
+# database access
 
 ```bash
 mysql -h bht2f0la4j8cz8fiwfdm-mysql.services.clever-cloud.com -u uczgzdxr8ml1xeex -P3306 -p bht2f0la4j8cz8fiwfdm
@@ -46,9 +48,8 @@ SELECT * FROM auth_user;
 
 ```
 
-[superuser after ssh](image.png)
 
-# Fucking Static
+# Static Files
 
 [How to manage static files](https://docs.djangoproject.com/en/5.0/howto/static-files/)
 [How to deploy static files](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
